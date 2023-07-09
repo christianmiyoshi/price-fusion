@@ -1,0 +1,12 @@
+{% extends "integration/base.html" %}
+
+{% block content %}
+    <h1>Bloco</h1>
+
+    {% for integration in integrations %}
+    <h2>
+        {{ integration.name }}
+    </h2>
+    {% endfor %}
+
+{% endblock %}
